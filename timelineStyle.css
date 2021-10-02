@@ -1,0 +1,73 @@
+.navbar ul{
+    display:flex;
+    justify-content: center;
+    list-style: none;
+}
+.navbar ul li{
+    padding:25
+}
+.navbar ul li a{
+    text-decoration:none;
+    text-decoration-style: none;
+    font-size: 25;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.navbar ul li a:hover{
+    border-bottom: 2px solid white;
+}
+body{
+    background: url("corona.jpeg") center no-repeat;
+    background-size: cover;
+}
+h1{
+    color:white;
+    font-size:80;
+    text-align:center;
+    margin-top:200;
+}
+.timeline{
+    display:flex;
+    justify-content: center;
+}
+.timeline ul li{
+    width:6px;
+    background-color: white;
+    list-style-type: None;
+    padding-bottom: 50;
+}
+.timeline ul li div{
+    width:400px;
+    height:100px;
+    background-color: rgba(211, 12, 45, 0.829);
+    color:white;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 2s;
+}
+
+.timeline ul li:nth-child(even) div{
+    position:relative;
+    left:30px;
+}
+.timeline ul li:nth-child(odd) div{
+    position:relative;
+    right:430px;
+}
+.timeline ul li div{
+    opacity: 0;
+    visibility: hidden;
+}
+.timeline ul li:nth-child(odd).in-view div{
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-200px);
+}
+.timeline ul li:nth-child(even).in-view div{
+    opacity: 1;
+    visibility: visible;
+    transform: translate(200px);
+}

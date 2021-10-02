@@ -1,0 +1,33 @@
+.header{
+    background-image: url('Coronavirus-1.jpg');
+    background-size: cover;
+    height:100%;
+}
+
+.navbar ul{
+    display:flex;
+    justify-content: center;
+    list-style: none;
+}
+.navbar ul li{
+    padding:25
+}
+.navbar ul li a{
+    text-decoration:none;
+    text-decoration-style: none;
+    font-size: 25;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.navbar ul li a:hover{
+    border-bottom: 2px solid white;
+}
+.content{
+    margin-top: 400px;
+}
+h1{
+    text-align: center;
+    color:white;
+    font-size: 80;
+}
